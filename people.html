@@ -79,8 +79,17 @@
             padding: 0;
         }
 
-	@media (max-width: 768px) {
-    		.image-row {
+	@media (max-device-width: 768px) {
+
+		.container {
+	    		width: 100%;
+	    		display: flex;
+            		align-items: center; /* Align items to the center of the container */
+	    		margin: auto;
+	    		padding: 0 1vw; 
+        	}    		
+
+		.image-row {
         		flex-wrap: nowrap;
        			justify-content: center;
     		}
