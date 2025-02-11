@@ -111,7 +111,29 @@
             		align-items: center; /* Align items to the center of the container */
 	    		margin-left: 5vw;
 	    		margin-right: 5vw;
-        	}    
+        	}   
+
+		.photos {
+            		display: flex;
+            		flex-direction: column; /* Arrange photos in a column */
+	    		justify-content: center;
+        	}
+		.photos figure {
+            		margin: 0;
+            		margin-bottom: 1vw;
+	    		width: 50vw; /* Set the width of the figure */
+	    		text-align: center; /* Center-align the caption text */
+        	}
+        	.photos img {
+            		width: 100%; /* Ensure the images scale well */
+            		height: auto; /* Maintain aspect ratio */
+            		margin-bottom: 5px; /* Space between images */
+        	}
+		.photos figcaption {
+            		width: 100%; /* Ensure caption takes the full width of the figure */
+            		//font-style: italic;
+            		margin-top: 5px;
+        	} 
 
 		.my-button {
         		font-size: 1.4vw; /* Adjust font size */
