@@ -41,16 +41,19 @@
 	    font-size: 0.9vw;
         }
         .image-item {
+	    display: inline-block;
             text-align: center; /* Center the caption under the image */
         }
         .image-item img {
-	    max-width: 100%;
-	    display: inline-block;
+	    display: block;
+	    width: 100%;
 	    height: 10vw;
 	    width: 8vw;
 	    object-fit: cover;
         }
         .image-item figcaption {
+	    width: 100%;
+	    word-wrap: break-word;
 	    margin-top: 0.1vw; /* Space between image and caption */
             color: #555;
         }
