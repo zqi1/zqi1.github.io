@@ -46,7 +46,7 @@
         .image-item img {
 	    max-width: 100%;
 	    display: inline-block;
-	    height: 8vw;
+	    height: auto;
 	    object-fit: contain;
         }
         .image-item figcaption {
@@ -78,6 +78,17 @@
             margin: 0.2vw;
             padding: 0;
         }
+
+	@media (max-width: 768px) {
+    		.image-row {
+        		flex-wrap: wrap;
+       			justify-content: center;
+    		}
+
+    		.image-item img {
+        		width: 45vw;
+    		}
+	}
 	
 	
     
