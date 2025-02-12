@@ -106,7 +106,28 @@
 	    		margin-left: 5vw;
 	    		margin-right: 5vw;
         	}    
-
+	        .photos {
+        		display: flex;
+            		flex-direction: column; /* Arrange photos in a column */
+	    		align-items: center;
+	    		justify-content: center;
+	    
+        	}
+		.photos figure {
+            		margin: 1vw;
+	    		width: 70vw; /* Set the width of the figure */
+	    		text-align: center; /* Center-align the caption text */
+        	}
+        	.photos img {
+            		width: 100%; /* Ensure the images scale well */
+            		height: auto; /* Maintain aspect ratio */
+            		margin: 1vw; /* Space between images */
+        	}
+		.photos figcaption {
+            		width: 100%; /* Ensure caption takes the full width of the figure */
+            		//font-style: italic;
+            		margin-top: 5px;
+        	} 
         	.non-scrollable-text {
             		width: 90vw; /* Set the same width for consistency */
             		padding: 0.5vw; /* Optional: Add some padding for better readability */
