@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIAN QIN - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Verdana, "KaiTi", "楷体", "STKaiti", "KaiTi_GB2312", sans-serif;
+	    font-size: 0.9vw;
+            margin-left: 15vw;
+	    margin-right: 15vw;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1vw;
+            text-align: center;
+        }
+        section {
+            padding: 0.5vw;
+            margin-bottom: 0.5vw;
+            background-color: #fff;
+        }
+
+	.container {
+	    max-width: 2000px;
+	    display: flex;
+            align-items: center; /* Align items to the center of the container */
+	    margin-left: 5vw;
+	    margin-right: 5vw;
+	    padding: 0 0vw; 
+        }
+        .photos {
+            display: flex;
+            flex-direction: column; /* Arrange photos in a column */
+            margin-right: 1.5vw; /* Space between photos and text */
+	    width: 10vw;
+        }
+	.scrollable-text {
+            width: 50vw; /* Set the desired width */
+            height: 50vw; /* Set the desired height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 0.5px; /* Optional: Add some padding for better readability */
+            background-color: #FFFFFF; /* Optional: Set a background color */
+        }
+        .non-scrollable-text {
+            width: 60vw; /* Set the same width for consistency */
+            padding: 0.5vw; /* Optional: Add some padding for better readability */
+            background-color: #FFFFFF; /* Optional: Set a background color */
+        }
+	.my-button {
+        	font-size: 0.9vw; /* Adjust font size */
+        	padding: 0.2vw 0.5vw; /* Customize padding */
+		border: none;
+		text-decoration: none;
+		color: #fff;
+		background-color: #333;
+		display: inline-block;
+		margin: 0.2vw;
+    	}
+	.my-button:hover {
+            background-color: #e0e0e0; /* Change color on hover to make it interactive */
+        }
+        /* Remove underline and padding/margin from links */
+        a.my-button {
+            text-decoration: none; /* Ensure no underline if buttons are links */
+            margin: 0.2vw;
+            padding: 0;
+        }
+    
+	
+	@media (max-device-width: 768px) {
+
+
+		* {
+   			margin: 0;
+    			padding: 0;
+    			box-sizing: border-box;
+		}
+		
+		body {
+            		font-family: Verdana, "KaiTi", "楷体", "STKaiti", "KaiTi_GB2312", sans-serif;
+	    		font-size: 1.4vw;
+            		margin-left: 1vw;
+	   		margin-right: 1vw;
+           		padding: 0;
+            		background-color: #f4f4f4;
+        	}
+
+		.container {
+	    		width: 100%;
+	    		display: flex;
+            		align-items: center; /* Align items to the center of the container */
+	    		margin-left: 5vw;
+	    		margin-right: 5vw;
+        	}    
+
+        	.photos {
+            		display: flex;
+            		flex-direction: column; /* Arrange photos in a column */
+            		margin-right: 1.5vw; /* Space between photos and text */
+	    		width: 15vw;
+        	}
+
+        	.non-scrollable-text {
+            		width: 70vw; /* Set the same width for consistency */
+            		padding: 0.5vw; /* Optional: Add some padding for better readability */
+            		background-color: #FFFFFF; /* Optional: Set a background color */
+        	}
+
+        	.my-button {
+        		font-size: 1.4vw; /* Adjust font size */
+        		padding: 0.2vw 0.5vw; /* Customize padding */
+			border: none;
+			text-decoration: none;
+			color: #fff;
+			background-color: #333;
+			display: inline-block;
+			margin: 0.2vw;
+    		}
+
+
+	}
+
+	    
+        h1, h2 {
+            color: #0000B;
+        }
+        footer {
+            text-align: center;
+            padding: 1vw;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Zian Qin 秦子安</h1>
+        </div>
+
+	<a href="index.html" class="my-button">Homepage</a>
+    </header>
+    
+
+
+    <section id="projects">
+        <div class="container">
+
+		<div class="non-scrollable-text">
+		<h2>News</h2>
+		<p>2022</p>
+		<p>[Service] Dr. Qin is invited to be a technical program chair of PEDG 2023, Shanghai, China</p>
+		<p>[Invited talk] Dr. Qin has given an invited talk on DERLab Knowledge Day, on 'Review on Power Quality Issues in EV Charging'. </p>
+		<p>[Invited talk] Dr. Qin has given an invited talk in PEMC, Brasov, and the topic is <a href="https://photos.onedrive.com/share/5B548037C4E35EE7!104191?cid=5B548037C4E35EE7&resId=5B548037C4E35EE7!104191&authkey=!AAB9TbUuMK8BtIc&ithint=video&e=bdMAZV">'Review on Power Quality Issues in EV Charging'</a>. </p>
+		<p>[Tutorial] Dr. Qin has given a tutorial on EV Charging Technologies in PEDG 2022 together with colleagues from TU Delft. </p>
+		<p>[Publications] Two papers got accepted by IEEE Open Journal of the Industrial Electronics Society, including Lucia's paper 'Guidelines for Stability Analysis of the DDSRF-PLL Using LTI and LTP Modelling in the Presence of Imbalance' and Adnan's paper 'An Overview on Medium Voltage Grid Integration of Ultra-fast Charging Stations: Current Status and Future Trends'. Congratulations!</p>
+		<p>[Project] Our project <a href="https://grow-offshorewind.nl/project/flexh2">FlexH2</a> has been kicked off. Looking forward to a fruitful collaboration with the partners Shell, GE, ABB, DNV, VONK, TKF, Van Oord and TU/e</p>
+		<p>[Honour] Our paper <a href="https://research.tudelft.nl/en/publications/grid-impact-of-electric-vehicle-fast-charging-stations-trends-sta">'Grid Impact of Electric Vehicle Fast Charging Stations: Trends, Standards, Issues and Mitigation Measures - An Overview'</a> is in the TOP 5 mostly cited papers in IEEE Open Journal of Power Electronics. Congratulations to all the authors!</p>
+		<p>[Service] Dr. Qin is serving as a Tutorial Chair in IEEE-PEDG 2022</p>
+		<p>[Service] Dr. Qin is serving as a committee member of IEEE Standard Association on the topic of 'Solid-state transformers'</p>
+		<p>[Invited Talk] Dr. Qin is invited to give a talk in IEEE-PEMC 2022, on 'The power quality of EV charging'</p>
+		<p>[Promotion] Dr. Qin is promoted to be a tenured assistant professor at TU Delft</p>
+
+		<p>2021</p>
+		<p>[Grant] Our Mooi project Flex-H2 has been granted. As a principle investigator I have been granted 750 K Euros for two PhD students. Will focus on solid state transformers for offshore wind powered hydrogen electrolyzer. excited to start the project in April, 2022.</p>
+		<p>[Editorial] Dr. Qin is appointed as an guest AE of IEEE Transactions on Energy Conversion special issue on Modeling and Control of Converter-Based Resources in Modern Power Systems</p>
+		<p>[Promotion] Dr. Qin is promoted to be university docent 1 (UD1) at TU Delft</p>
+		<p>[Patent] Our patent "Bi-directional Isolated Multi-port Converter with Hot-Swap Capability" is filed</p>
+		<p>[Patent] Our patent "Balancing converter for a bipolar dc grid using a series resonant converter" is filed</p>
+		<p>[Article] Our former student Dr. Pavel Purgat has got his paper "Low-Voltage dc System Building Blocks: Integrated Power Flow Control and Short Circuit Protection" accepted by IEEE Industrial Electronics Magazine. Congratulations! </p>
+		<p>[Editorial] Dr. Qin is appointed as an guest AE of IEEE JESTPE special issue on Smart Solid State Transformers for AC/DC Hybrid Power Grids </p>
+		<p>[Article] Our student Lucia has got her paper "Impedance Modelling for Three-Phase Inverters with Double Synchronous Reference Frame Current Controller in the Presence of Imbalance" accepted by IEEE Trans Power Electron. Congratulations!</p>
+		<p>[Invited Talk] Dr. Qin successfully gave a <a href="https://www.youtube.com/watch?v=o-7UPXzYd1g&t=1759s">speech</a> in ElaadNL EV charging best practices and Power Quality Webinar.</p>
+		<p>[Invited Talk] Dr. Qin is invited to give a speech in ElaadNL EV charging best practices and Power Quality Webinar</p>
+		<p>[Editorial] Dr. Qin is appointed as an associate editor of IEEE Transactions on Industrial Electronics</p>
+		<p>[Article] Our student Lu's paper <a href="https://research.tudelft.nl/en/publications/grid-impact-of-electric-vehicle-fast-charging-stations-trends-sta">'Grid Impact of Electric Vehicle Fast Charging Stations: Trends, Standards, Issues and Mitigation Measures - An Overview'</a> has been the most popular one in the IEEE Open Journal of Power Electronics since it was published in Feb 2021. Congratulations!</p>
+		<p>[Award] Dr. Qin is one of the 'Distinguished Reviewers' of TIE in year 2020</p>
+		</div>
+
+	</div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zian Qin. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
