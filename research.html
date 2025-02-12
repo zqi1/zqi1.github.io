@@ -34,30 +34,29 @@
 	    overflow: hidden;
 		
         }
-        .photos {
-            display: flex;
-            flex-direction: column; /* Arrange photos in a column */
-	    align-items: center;
-	    justify-content: center;
-	    
+  	.image-row {
+	    	display: flex;
+            	justify-content: center;
+		align-items: center;
+	    	font-size:0;
         }
-	.photos figure {
-            margin: 1vw;
-	    width: 40vw; /* Set the width of the figure */
-	    text-align: center; /* Center-align the caption text */
+        .image-item {
+        	text-align: center; /* Center the caption under the image */
         }
-        .photos img {
-            width: 100%; /* Ensure the images scale well */
-            height: auto; /* Maintain aspect ratio */
-            margin: 1vw; /* Space between images */
+        .image-item img {
+		max-width: 100%;
+		display: inline-block;
+	    	width: 15vw;
+	    	margin:2vw
+	    	object-fit: contain;
         }
-	.photos figcaption {
-            width: 100%; /* Ensure caption takes the full width of the figure */
-            //font-style: italic;
-            margin-top: 5px;
-        } 
+        .image-item figcaption {
+        	margin-top: 0.1vw; /* Space between image and caption */
+        	color: #555;
+		gap: 0.1vw;
+        }
         .non-scrollable-text {
-            width: 50vw; /* Set the same width for consistency */
+            width: 100%; /* Set the same width for consistency */
             padding: 0.5vw; /* Optional: Add some padding for better readability */
             background-color: #FFFFFF; /* Optional: Set a background color */
         }
@@ -100,40 +99,13 @@
         	}
 
 		.container {
-	    		width: 100%;
+	    		max-width: 2000vw;
 	    		display: flex;
             		align-items: center; /* Align items to the center of the container */
 	    		margin-left: 5vw;
 	    		margin-right: 5vw;
-        	}    
-	        .photos {
-        		display: flex;
-            		flex-direction: column; /* Arrange photos in a column */
-	    		align-items: center;
-	    		justify-content: center;
-	    
-        	}
-		.photos figure {
-            		margin: 1vw;
-	    		width: 70vw; /* Set the width of the figure */
-	    		text-align: center; /* Center-align the caption text */
-        	}
-        	.photos img {
-            		width: 100%; /* Ensure the images scale well */
-            		height: auto; /* Maintain aspect ratio */
-            		margin: 1vw; /* Space between images */
-        	}
-		.photos figcaption {
-            		width: 100%; /* Ensure caption takes the full width of the figure */
-            		//font-style: italic;
-            		margin-top: 5px;
-        	} 
-        	.non-scrollable-text {
-            		width: 90vw; /* Set the same width for consistency */
-            		padding: 0.5vw; /* Optional: Add some padding for better readability */
-            		background-color: #FFFFFF; /* Optional: Set a background color */
-        	}
 
+        	}    
 		.image-row {
 	    		display: flex;
             		justify-content: space-between;
@@ -148,7 +120,6 @@
 	    		display: inline-block;
 	    		width: 15vw;
 	    		margin:2vw
-			gap: 1vw;
 	    		object-fit: contain;
         	}
         	.image-item figcaption {
@@ -196,13 +167,57 @@
 		
 			
 
-			<div class="photos">
+
+			<div class="image-row">
+
+				<figure class="image-item">
+					<img src="ReducedSizeforWeb/energyhub.svg" style="width:40vw;" alt="">
+				</figure>
 			
-			<figure>
-				<img src="ReducedSizeforWeb/energyhub.svg" alt="">
-			</figure>	
 			</div>
+
 		
+    </section>
+
+    <section id="Invited Talk">
+        <div class="container">
+
+		<div class="non-scrollable-text">
+		
+			<h2>Power quality and stability with weak grid connection</h2>
+			<p> Energy hubs are highly self-sufficient, therefore their capacity can be much larger than the grid connection, making it a weak grid connection. This can lead to severe power quality and stability issues. We research on modelling, analyzing, and mitgating these issues. Our research results are partially shown below,</p>
+		        <p> &bull; xxx</p>
+		
+		
+		</div>
+
+	</div>
+
+        <div class="container">
+
+		<div class="non-scrollable-text">
+		
+			<h2>Medium voltage DC power conversion</h2>
+			<p> Energy hubs are connected to the grid via a traditional transformer. Meanwhile, it is beneficial to make a DC bus for the energy hub to reduce the power conversion stage and thereby the power loss, cost and control complexity. It is an appealing solution to implement this with power electronics and medium- rather than line-frequency based power conversion, so called Solid State Transformer (SST) or DC transformer. It enhances the flexibility and controllability, and reduces the footprint of the power conversion. Our research results including the power conversion, partially discharge and insulator design are shown below,  </p>
+		        <p> &bull; xxx</p>
+		
+		
+		</div>
+
+	</div>
+
+        <div class="container">
+
+		<div class="non-scrollable-text">
+		
+			<h2>System and battery safety and security</h2>
+			<p> Energy hubs are composed of controllable devices - power electronics. Communication is often necessary for the coordination inside the hub and also between the hub and the grid. This makes the energy hubs a cyber-physical system and vulnerable to cyber attacks. Moreover, battery energy storage integration is essential for the power balance in energy hubs. The battery management system if hacked can lead to explosion of the battery and create sever damage. Our research on the mitigation measures are shown below, </p>
+		        <p> &bull; xxx</p>
+		
+		
+		</div>
+
+	</div>
     </section>
 
     <section id="Invited Talk">
@@ -243,21 +258,13 @@
 
 				<figure class="image-item">
 					<img src="ReducedSizeforWeb/Shell.png" alt= >
-					</figure>
-			
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/Equinor.png" alt= >
-				</figure>
-					
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/Alfen.webp" alt=>
-				</figure>
-
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/Sungrow.jpg" alt=>
-				</figure>
-
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/Elaad.jpg" alt= >
 				</figure>
 							
@@ -269,21 +276,13 @@
 
 				<figure class="image-item">
 					<img src="ReducedSizeforWeb/Tennet.jpg" alt= >
-					</figure>
-			
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/Damen.png" alt= >
-				</figure>
-					
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/ABB.png" alt=>
-				</figure>
-
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/GE.png" alt=>
-				</figure>
-
-				<figure class="image-item">
+				</figure><figure class="image-item">
 					<img src="ReducedSizeforWeb/Vonk.jfif" alt= >
 				</figure>
 							
